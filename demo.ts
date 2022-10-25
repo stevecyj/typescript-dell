@@ -69,3 +69,14 @@ const params: { url: string; method: string } = {
   method: 'GET'
 };
 request(params.url, params.method as 'GET');
+
+// null,undefined
+const testObject: null = null;
+const testObject1: null = undefined;
+const testUndefined: undefined = null;
+
+function checkNull(abc: string | null) {
+  if (typeof abc === 'string') {
+    console.log(abc.toUpperCase());
+  }
+}
