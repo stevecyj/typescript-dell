@@ -50,3 +50,22 @@ const Employee1: Employee = { name: 'jojo', age: 19, salary: 1800 };
 // 斷言
 const dom: unknown = document.getElementById('#root') as unknown;
 const dom1: unknown = <unknown>document.getElementById('#root');
+
+// 字面量類型
+const str: 'as-string' = 'as-string';
+function getPosition(position: 'left' | 'left'): string {
+  return position;
+}
+getPosition('left');
+
+const truthy: true = true;
+
+// 字面量qa
+function request(url: string, method: 'GET' | 'POST'): string {
+  return 'sending request';
+}
+const params: { url: string; method: string } = {
+  url: 'immoc.com',
+  method: 'GET'
+};
+request(params.url, params.method as 'GET');
