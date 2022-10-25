@@ -85,3 +85,31 @@ function checkNull(abc: string | null) {
 function getNumber(): void {
   return
 }
+
+// 只要是變數、物件，都應該有明確的類型
+const userName: string = 'JOJO'
+userName.toUpperCase
+
+// 類型註解
+const userName1: string = '123'
+
+// 類型推斷
+const userAge = 18
+// 如果能夠自動推斷出來類型，就沒必要報手寫類型註解
+let nickName = 'JOJO'
+
+// 自動推斷出 return number
+function getTotal(paraOne: number, paraTwo: number) {
+  return paraOne + paraTwo
+}
+getTotal(1, 2)
+
+// 強制改成另一個類型
+// 如果推斷不出來或不準確，再手寫
+const userInfo: {
+  name: 'JOJO'
+  age: number
+} = {
+  name: 'JOJO',
+  age: 18,
+}
