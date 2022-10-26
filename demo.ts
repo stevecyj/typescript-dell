@@ -135,3 +135,9 @@ function example(x: string | number, y: string | boolean) {
     return x.toUpperCase();
   }
 }
+
+// 物件解構怎麼寫
+function getObjectValue({ a, b }: { a: string; b: number }) {
+  return a + b;
+}
+getObjectValue({ a: '1', b: 2 });
