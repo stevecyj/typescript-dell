@@ -141,3 +141,6 @@ function getObjectValue({ a, b }: { a: string; b: number }) {
   return a + b;
 }
 getObjectValue({ a: '1', b: 2 });
+
+// 變量類型以定義變量時的類型為準
+let name1: string | number = '123';
