@@ -1,0 +1,20 @@
+{
+  "name": "typescript-dell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 2",
+    "dev": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevecyj/typescript-dell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevecyj/typescript-dell/issues"
+  },
+  "homepage": "https://github.com/stevecyj/typescript-dell#readme"
+}
