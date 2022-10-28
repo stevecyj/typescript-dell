@@ -1,34 +1,27 @@
-// getter and setter
+// readonly
 // class Person {
-//   constructor(private _name: string) {}
-//   get name() {
-//     return this._name + ' Wang';
-//   }
-//   set name(name: string) {
-//     const realName = name.split(' ')[0];
-//     this._name = realName;
+//   public readonly name: string;
+//   constructor(name: string) {
+//     this.name = name;
 //   }
 // }
-
 // const person = new Person('JOJO');
-// console.log(person.name);
-// person.name = 'POPO Kao';
+// person.name = 'Hello';
 // console.log(person.name);
 
-// 單例模式
-class Demo {
-  private static instance: Demo;
-  private constructor(public name: string) {}
-  static getInstance() {
-    if (!this.instance) {
-      this.instance = new Demo('JOJO Wang');
-    }
-    return this.instance;
+// 抽象類
+
+abstract class Geom {
+  width: number;
+  getType() {
+    return 'Gemo';
+  }
+  abstract getArea(): number;
+}
+class Circle extends Geom {
+  getArea() {
+    return 123;
   }
 }
-
-const demo1 = Demo.getInstance();
-const demo2 = Demo.getInstance();
-console.log(demo1.name);
-console.log(demo2.name);
-console.log(demo1 === demo2);
+class Square {}
+class Triangle {}
